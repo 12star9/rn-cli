@@ -1,2 +1,1 @@
-# rn-cli
-rn-cli
+# Education-python

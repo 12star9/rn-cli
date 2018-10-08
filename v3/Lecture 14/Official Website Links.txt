@@ -1,0 +1,5 @@
+https://scikit-image.org/
+
+https://pypi.org/project/Pillow/
+
+Please refer to the lecture notes for more information.

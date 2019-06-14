@@ -1,3 +1,8 @@
 *.js linguist-language=JavaScript
 *.css linguist-language=JavaScript
 *.html linguist-language=JavaScript
+*.py  linguist-language=JavaScript
+*.txt  linguist-language=JavaScript
+*.ipynb  linguist-language=JavaScript
+*.csv  linguist-language=JavaScript
+*.xlsx  linguist-language=JavaScript

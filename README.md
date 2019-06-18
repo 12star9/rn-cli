@@ -5,7 +5,7 @@
 🎉 背景: 之前主导开发一个React-Native项目和在编写自己的React-Native小应用的时候，发现很多开发步骤是必须经过的，为了今后下一个项目最大程度省去这些时间，把一些项目工程结构，调试配置，常用组件集成，原生端通信，原生组件封装等组装成一个开发模版“脚手架”！
 
 
-####项目文件:
+#### 项目文件:
 
 AwesomeProject:即react-native项目根文件夹,当前RN版本为0.59.0，对应React版本为16.8.3.
 AwesomeProject子文件夹下的文件说明:
@@ -24,31 +24,31 @@ AwesomeProject子文件夹下的文件说明:
 -  index.js: android 和 ios 入口文件，可以在android的MainApplication中的ReactNativeHost中重写getJSMainModuleName()方法更改; 在ios的AppDelegate.m文件的didFinishLaunchingWithOptions方法中通过jsBundleURLForBundleRoot可以更改入口文件。
 
 
-####环境依赖
-######1.按照React-Native官方[文档](https://facebook.github.io/react-native/docs/getting-started "文档")安装好对应的环境
+#### 环境依赖
+###### 1.按照React-Native官方[文档](https://facebook.github.io/react-native/docs/getting-started "文档")安装好对应的环境
 
-######2.VSCode IDE依赖包安装
+###### 2.VSCode IDE依赖包安装
 - 删除Console.*语句依赖: `yarn add --dev babel-plugin-transform-remove-console`
 - VSCode智能提示: `npm install -g typings`，然后在项目根目录下`typings install dt~react-native --save --g`
 
 
 
-####使用步骤
+#### 使用步骤
 clone本项目到本地，执行`npm install`
 
 
 
-####卸载RN第三方组件常用步骤:
+#### 卸载RN第三方组件常用步骤:
 
-#####react-native端:
+##### react-native端:
 1. package-lock.json删除组件对应配置代码.
 2. 项目根目录打开终端执行: `npm install`.
 
 
 
-#####原生端:
+##### 原生端:
 
-######一.iOS
+###### 一.iOS
 
 CocoaPods方式
 1. 找到Podfile文件，删除组件对应pod配置代码.
@@ -62,18 +62,18 @@ CocoaPods方式
 5. 原生工程代码里删除组件对应的引用代码.
 
 
-######二.安卓
+###### 二.安卓
 1. android文件夹目录下找到settings.gradle文件，删除库引用.
 2. android/app文件夹目录下找到build.gradle文件，删除库依赖.
 3. android/app/src/main/java/目录下找到MainApplication.java文件，删除组件的安卓原生代码引入.
 
 
-####打包部署
+#### 打包部署
 package.json配置了常用的scripts，在react-native项目文件夹打开终端运行命令: `npm run <script-name>`
 例如进行iOS打包: `npm run bundle:ios`
 
 
-####React-Native项目运行出错建议参考思路:
+#### React-Native项目运行出错建议参考思路:
 [StackOverFlow](https://stackoverflow.com/questions/tagged/react-native "StackOverFlow")
 [React-Native-Issues](https://github.com/facebook/react-native/issues "React-Native-Issues")
 
@@ -86,7 +86,7 @@ package.json配置了常用的scripts，在react-native项目文件夹打开终�
 
 
 
-####release各版本说明:
+#### release各版本说明:
 
 v0.0.1 集成GoogleMaps.
 

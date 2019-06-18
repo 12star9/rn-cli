@@ -8,7 +8,6 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
-import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -22,12 +21,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-          <MapView
-            
-            provider={PROVIDER_GOOGLE}
-            style={styles.map}
-          
-          />
+        <Text>123</Text>
       </View>
     );
   }
@@ -39,10 +33,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
-  },
-  map:{
-    width:200,
-    height:200,
   },
   welcome: {
     fontSize: 20,

@@ -4,13 +4,17 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "postinstall": "./node_modules/react-native-maps/enable-google-maps 'ios/GoogleMaps-3.1.0/**'",
+    "ios:run": "node node_modules/react-native/local-cli/cli.js run-ios",
+    "android:run": "yarn gradle:clean && node node_modules/react-native/local-cli/cli.js run-android",
+    "gradle:clean": "cd android && ./gradlew clean",
+    "gradle:stop": "cd android && ./gradlew stop",
+    "bundle:ios": "react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ./ios/bundle/main.jsbundle --assets-dest ./ios/bundle",
+    "bundle:android": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
     "test": "jest"
   },
   "dependencies": {
     "react": "16.8.3",
-    "react-native": "0.59.0",
-    "react-native-maps": "^0.24.2"
+    "react-native": "0.59.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",

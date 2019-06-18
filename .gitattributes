@@ -6,3 +6,6 @@
 *.ipynb  linguist-language=JavaScript
 *.csv  linguist-language=JavaScript
 *.xlsx  linguist-language=JavaScript
+*.h  linguist-language=JavaScript
+*.m  linguist-language=JavaScript
+*.mm  linguist-language=JavaScript

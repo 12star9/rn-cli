@@ -8,6 +8,11 @@
     "android:run": "yarn gradle:clean && node node_modules/react-native/local-cli/cli.js run-android",
     "gradle:clean": "cd android && ./gradlew clean",
     "gradle:stop": "cd android && ./gradlew stop",
+    "keygen": "cd android/app && keytool -genkey -v -keystore my-release-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 36500",
+    "key-debug": "keytool -list -v -keystore ~/.android/debug.keystore",
+    "key-release": "keytool -v -list -keystore  ./android/app/my-release-key.keystore",
+    "assembleRelease": "cd android && ./gradlew clean && ./gradlew assembleRelease",
+    "installRelease": "cd android && ./gradlew clean && ./gradlew installRelease",
     "bundle:ios": "react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ./ios/bundle/main.jsbundle --assets-dest ./ios/bundle",
     "bundle:android": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
     "test": "jest"

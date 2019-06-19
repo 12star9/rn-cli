@@ -34,7 +34,11 @@ AwesomeProject子文件夹下的文件说明:
 
 
 #### 使用步骤
-clone本项目到本地，执行`npm install`
+1. clone本项目到本地，安装项目重命名npm包: `yarn global add react-native-rename` or `npm install react-native-rename -g`，然后在项目根目录下打开终端输入命令: `react-native-rename "<new_project_name>" -b <bundle_id_name>`,ios端，打开Xcode,手动修改<bundle_id_name>
+2. 修改AwesomeProject项目名为<new_project_name>
+3. 执行`npm install`
+4. 打包 `npm run bundle:ios` or `npm run bundle:android`,运行 `npm run ios:run` or 打开安卓模拟器，最后 `npm run android:run`
+
 
 
 
@@ -89,6 +93,10 @@ package.json配置了常用的scripts，在react-native项目文件夹打开终�
 #### release各版本说明:
 
 v0.0.1 集成GoogleMaps.
+
+
+
+
 
 
 

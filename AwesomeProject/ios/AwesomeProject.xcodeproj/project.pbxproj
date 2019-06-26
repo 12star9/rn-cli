@@ -15,8 +15,15 @@
 		00E356F31AD99517003FC87E /* AwesomeProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AwesomeProjectTests.m */; };
 		11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
-		1351898022B8DC4D00656CE2 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 1351897F22B8DC4D00656CE2 /* main.jsbundle */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
+		1394B6B622C35FC200C3458B /* libcxxreact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA91DF850E9000B6D8A /* libcxxreact.a */; };
+		1394B6B722C35FC200C3458B /* libdouble-conversion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF0FFE72056DD460020B375 /* libdouble-conversion.a */; };
+		1394B6B822C35FC200C3458B /* libfishhook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6841FA4F8DC00B85C8A /* libfishhook.a */; };
+		1394B6B922C35FC200C3458B /* libjsi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1356F0A822B3713300E5F18B /* libjsi.a */; };
+		1394B6BA22C35FC200C3458B /* libjsiexecutor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1356F0AA22B3713300E5F18B /* libjsiexecutor.a */; };
+		1394B6BB22C35FC200C3458B /* libjsinspector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF0FFDF2056DD460020B375 /* libjsinspector.a */; };
+		1394B6BC22C35FC200C3458B /* libthird-party.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF0FFE32056DD460020B375 /* libthird-party.a */; };
+		1394B6BD22C35FC200C3458B /* libyoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA51DF850E9000B6D8A /* libyoga.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
@@ -328,7 +335,6 @@
 		00E356EE1AD99517003FC87E /* AwesomeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* AwesomeProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwesomeProjectTests.m; sourceTree = "<group>"; };
-		1351897F22B8DC4D00656CE2 /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; name = main.jsbundle; path = bundle/main.jsbundle; sourceTree = "<group>"; };
 		1356F0B422B371B900E5F18B /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = "GoogleMaps-3.1.0/Maps/Frameworks/GoogleMapsCore.framework"; sourceTree = "<group>"; };
 		1356F0B522B371B900E5F18B /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = "GoogleMaps-3.1.0/Maps/Frameworks/GoogleMaps.framework"; sourceTree = "<group>"; };
 		1356F0B622B371BA00E5F18B /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = "GoogleMaps-3.1.0/Base/Frameworks/GoogleMapsBase.framework"; sourceTree = "<group>"; };
@@ -368,6 +374,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1394B6B622C35FC200C3458B /* libcxxreact.a in Frameworks */,
+				1394B6B722C35FC200C3458B /* libdouble-conversion.a in Frameworks */,
+				1394B6B822C35FC200C3458B /* libfishhook.a in Frameworks */,
+				1394B6B922C35FC200C3458B /* libjsi.a in Frameworks */,
+				1394B6BA22C35FC200C3458B /* libjsiexecutor.a in Frameworks */,
+				1394B6BB22C35FC200C3458B /* libjsinspector.a in Frameworks */,
+				1394B6BC22C35FC200C3458B /* libthird-party.a in Frameworks */,
+				1394B6BD22C35FC200C3458B /* libyoga.a in Frameworks */,
 				ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */,
@@ -597,7 +611,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				1351897F22B8DC4D00656CE2 /* main.jsbundle */,
 				13B07FAE1A68108700A75B9A /* AwesomeProject */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* AwesomeProjectTests */,
@@ -1080,7 +1093,6 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				1351898022B8DC4D00656CE2 /* main.jsbundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -39,6 +39,10 @@ AwesomeProject子文件夹下的文件说明:
 3. 执行`npm install`
 4. 打包 `npm run bundle:ios` or `npm run bundle:android`,运行 `npm run ios:run` or 打开安卓模拟器，最后 `npm run android:run`
 
+注意： 
+如果出现问题，请核对对应的React(ReactNative)版本号，如果还是不行，麻烦提Issues！ 
+建议还是按照官方文档来，该仓库下的代码还是有许多可以参考的！
+
 
 
 
